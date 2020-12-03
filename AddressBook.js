@@ -111,11 +111,60 @@ class AddressBookMaster {
   }
   
   //creating an instance and giving contact details
-  try {
-  let contact_book = new AddressBookMaster("Prajakta", "Bramhe", "AshtyvinayakColony", "Nagpur", "Maharashtra", "445534",
-    "91 8149240833", "prajakta14bramhe@gmail.com");
-  console.log(contact_book.toString());
-} catch (e) {
+try {
+    let ContactsArray = new Array();
+    ContactsArray.push(
+      new AddressBookMaster(
+        "Prajakta",
+        "Bramhe",
+        "AshtyavinayakColony",
+        "Ngpur",
+        "Mharashtra",
+        "445334",
+        "91 8149240833",
+        "prajakta14bramhe@gmail.com"
+      )
+    );
+    ContactsArray.push(
+      new AddressBookMaster(
+        "Ekta",
+        "Shende",
+        "Hudkeshwar",
+        "Chennai",
+        "TamilNadu",
+        "268 756",
+        "91 7312569875",
+        "ektashende04@gmail.com"
+      )
+    );
+    ContactsArray.push(
+      new AddressBookMaster(
+        "Nandha",
+        "Kumar",
+        "fourstreet",
+        "Delhi",
+        "NewDelhi",
+        "891 258",
+        "87 9090909090",
+        "nandha@gmail.com"
+      )
+    );
+    ContactsArray.push(
+      new AddressBookMaster(
+        "Shubham",
+        "Kumar",
+        "beachroad",
+        "Vizag",
+        "MadhyPradesh",
+        "628 412",
+        "91 7878787878",
+        "john@gmail.com"
+      )
+    );
+    ContactsArray.forEach((contact_book) =>
+      console.log(contact_book.toString())
+    );
+  } catch (e) {
     console.log(e);
   }
   
