@@ -180,6 +180,23 @@ console.log("--Total Contacts Present in the ContactsArray array-- : " +
   ContactsPresenceTotal   
 );
 
+// check for duplicate Person details
+let CountDuplicate = 0;
+function CheckDuplicatesCount(contact_book) {
+  if (contact_book.firstName == "Nandha") CountDuplicate++;
+  return CountDuplicate;
+}
+//using foreach checking the count for each contact
+ContactsArray.forEach((contact_book) => CheckDuplicatesCount(contact_book));
+if (CountDuplicate == 1)
+  console.log(
+    "--It is Not a Duplicate Entry--"
+  );
+else
+  console.log(
+    "--It is Duplicate Entry--"
+  );
+
 } catch (e) {
   console.log(e);
 }
