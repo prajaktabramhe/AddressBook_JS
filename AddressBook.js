@@ -161,12 +161,12 @@ try {
   ContactsArray[check].zip = "121 333";
 
   //displaying contacts after being updated
-  console.log("----------------------After Changing Zip Updated Contacts are------------------------------------");
+  console.log("--After Changing Zip Updated Contacts are--");
   ContactsArray.forEach((contact_book) => console.log(contact_book.toString())
   );
 //UC5 Removing an element from an array at an  index
 ContactsArray.splice(check, 1);
-console.log("----------------------Contacts after Being Deleted from the array---------------------------------");
+console.log("--Contacts after Being Deleted from the array--");
 ContactsArray.forEach((contact_book) => console.log(contact_book.toString())
 );
 //UC6 Reduce function to find total of contacts in Address Book
@@ -177,7 +177,7 @@ function findTotalContacts(ContactsArray) {
 }
 ContactsArray.reduce(findTotalContacts, 1);
 console.log(
-  "--------------------Total Contacts Present in the AddressBookContacts array--------------------------   : " +
+  "--Total Contacts Present in the AddressBookMaster array--: " +
   ContactsPresenceTotal   
 );
 } catch (e) {
