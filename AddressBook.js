@@ -177,7 +177,7 @@ function findTotalContacts(ContactsArray) {
 }
 ContactsArray.reduce(findTotalContacts, 1);
 console.log(
-  "--------------------Total Contacts Present in the AddressBookContacts array--------------------------   : " +
+  "--Total Contacts Present in the  AddressBookMaster array--: " +
   ContactsPresenceTotal   
 );
 // check for duplicate Person details
@@ -190,11 +190,11 @@ function CheckDuplicatesCount(contact_book) {
 ContactsArray.forEach((contact_book) => CheckDuplicatesCount(contact_book));
 if (CountDuplicate == 1)
   console.log(
-    "-----------------------------It is Not a Duplicate Entry-------------------------------"
+    "--It is Not a Duplicate Entry--"
   );
 else
   console.log(
-    "------------------------------It is Duplicate Entry---------------------------------"
+    "--It is Duplicate Entry--"
   );
 } catch (e) {
   console.log(e);
