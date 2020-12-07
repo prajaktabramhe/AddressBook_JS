@@ -197,6 +197,35 @@ else
     "--It is Duplicate Entry--"
   );
 
-} catch (e) {
+  //Ability to search person in particular City or State
+
+  //Search By City
+  console.log(
+    "\n--Search To get Contact by City Nagpur--"
+  );
+  function ContactByCity(contact) {
+    if (contact.city == "Vizag") console.log(contact.toString());
+  }
+  ContactsArray.filter(ContactByCity);
+
+  //Search By State
+  console.log(
+    "--Search Contact By State Maharashtra--"
+  );
+  let statecontact = ContactsArray.filter((contact) =>
+    contact.state.includes("AndhraPradesh")
+  );
+  console.log(statecontact.toString());
+
+
+  // UC8 - Ability to View Person by City or State
+  function StateMap(Details) {
+    return Details.state + "       " + Details.firstName + "        " + Details.lastName;
+  }
+  let addressStateMap = ContactsArray.map(StateMap);
+  console.log(addressStateMap);
+}
+
+catch (e) {
   console.log(e);
 }
